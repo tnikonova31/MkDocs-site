@@ -1,0 +1,49 @@
+site_name: Сборка DocsAsCode на MkDocs # Название сайта
+site_description: Профессиональное портфолио # Описание сайта, добавляется в meta-теги
+theme: # Тема сайта, информация о ее параметрах
+  name: material # Название темы
+  logo: images/logo.png # Ссылка на логотип сайта, логотип добавляется в папку `docs/images`
+  font:
+    text: Roboto # Шрифт текста
+    code: Roboto Mono # Шрифт для текста кода
+  language: ru # Язык
+  palette: # Настройки светлой и тёмной тем
+    # Настройки светлой темы
+    - scheme: default 
+      toggle:
+        icon: material/weather-sunny # Иконка для активации светлой темы
+        name: Выключить солнышко # Всплывающий текст-подсказка
+      primary: blue # Основной цвет
+      accent: purple # Акцентный цвет
+      # вы можете использовать любой цвет из списка: 
+      # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
+      # green; light green; lime; yellow; amber; orange; deep orange; brown; 
+      # grey; blue grey; black; white
+
+    # Настройки тёмной темы
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Позвать солнышко
+      primary: deep purple
+      accent: blue
+  features: # настройки функциональностей темы
+  #  - navigation.sections
+    - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
+  #  - navigation.tabs # Верхнее меню
+    - navigation.tabs.sticky # Фиксация верхнего меню
+   # - Navigation sections # Настройка спойлеров в левом меню
+   # - navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
+   # - toc.integrate # Фиксирует оглавление страницы в левом меню
+    - navigation.instant # Функция быстрой загрузки страниц
+    - navigation.top # Добавляет кнопку «к началу» для быстрой обратной прокрутки страницы
+    - search.suggest # Подсказки при вводе поискового запроса
+    - search.highlight # Подсветка результатов поиска в тексте страницы
+    - content.code.copy # Кнопка копирования в блоке кода
+   # - task-lists # чекбоксы
+nav: # Структура сайта
+- Главная страница: index.md
+- Работа с Telegram:
+    - 'Создание группового чата и управление участниками': telegram/tnikonova31-instruction.md
+- Работа с другим приложением:
+    - 'какие-то действия в другом приложении': telegram/tnikonova31-instruction.md
