@@ -1,7 +1,7 @@
 site_name: База знаний по работе с приложениями # Название сайта
 site_description: Пошаговые инструкции по работе с популярными программами и сервисами # Описание сайта, добавляется в meta-теги
 site_url: https://example.com # URL сайта (замените на реальный)
-site_author: Автор базы знаний # Автор сайта
+site_author: tnikonova31 # Автор сайта
 copyright: Copyright © 2026 # Информация об авторских правах
 
 theme: # Тема сайта, информация о ее параметрах
@@ -47,7 +47,7 @@ plugins:
       separator: '[\s\-,:!=\[\]()"`/]+'
       lang: ru
   # - awesome-pages  # автоматически собирает названия статей - не заработало
-  - macros  # автоматически собирает названия статей
+  #- macros  # автоматически собирает названия статей
   # - tags # Плагин для тегов (раскомментируйте при необходимости)
 
 # Расширения Markdown
@@ -94,8 +94,11 @@ nav:
           - 'Форматирование текста': office/word/format-text.md
       - Нотсапп: 
           - office/notesapp/index.md
-#  - Графические программы:
-#      - graphics/index.md
+          - 'Создание заметки': office/notesapp/create-note.md
+          - 'Редактирование заметки': office/notesapp/edit-note.md
+          - 'Удаление заметки': office/notesapp/delete-note.md               
+  - Графические программы:    
+      - graphics/index.md
 
 # Подключение кастомных CSS
 extra_css:
@@ -105,7 +108,7 @@ extra_css:
 extra:
   generator: false # Скрыть информацию о генераторе сайта
   social:
-    # - icon: fontawesome/brands/github
-    #   link: https://github.com/username
-    # - icon: fontawesome/brands/telegram
-    #   link: https://t.me/username
+     - icon: fontawesome/brands/github
+       link: https://github.com/username
+     - icon: fontawesome/brands/telegram
+       link: https://t.me/username

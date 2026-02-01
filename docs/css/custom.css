@@ -375,18 +375,19 @@ body {
     border-radius: var(--radius-sm);
 }
 
-/* Шаги инструкции */
+/* Шаги инструкции — кастомные кружки */
 .md-content__inner ol {
-    padding-left: 1.8rem;
+    padding-left: 0;
     margin: 1.5rem 0;
     counter-reset: step-counter;
+    list-style: none;
 }
 
 .md-content__inner ol li {
-    margin-bottom: 1rem;
-    line-height: 1.7;
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
     position: relative;
-    padding-left: 24px;
+    padding-left: 32px; /* уменьшено, чтобы соответствовать меньшему кружку */
 }
 
 .md-content__inner ol li::before {
@@ -394,17 +395,18 @@ body {
     content: counter(step-counter);
     position: absolute;
     left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
+    top: 0.2em;
+    width: 20px;        /* ← уменьшено с 24px до 20px */
+    height: 20px;       /* ← уменьшено с 24px до 20px */
     background: var(--color-accent);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8rem;
+    font-size: 0.8rem;  /* ← немного уменьшен шрифт для лучшего баланса */
     font-weight: 600;
+    line-height: 1;
 }
 
 /* Частые вопросы */
@@ -680,3 +682,12 @@ body {
     background-color: rgba(74, 111, 165, 0.02);
 }
 
+/* Инлайновые иконки в тексте */
+.inline-icon {
+    display: inline-block !important;
+    margin: 0 !important;
+    vertical-align: -0.3em;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 4px;
+}
