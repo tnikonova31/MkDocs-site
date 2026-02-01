@@ -73,16 +73,29 @@ markdown_extensions:
      permalink: "🔗" # Постоянные ссылки на заголовки
 
 # Навигация по сайту
-nav: # Структура сайта
-- Главная: index.md
-- Мессенджеры:
-    - Мессенджеры: messengers/index.md
-    - Telegram: 
-        - messengers/telegram/index.md
-        - 'Создание группового чата и управление участниками в приложении Telegram': messengers/telegram/tnikonova31-instruction.md
-        - 'Пересылка сообщений и медиафайлов в приложении Telegram': messengers/telegram/send-messages.md
-    - Max:
-      - messengers/max/index.md
+nav:
+  - Главная: index.md
+  - Мессенджеры:
+      - Обзор: messengers/index.md
+      - Telegram:
+          - messengers/telegram/index.md
+          - 'Создание группового чата и управление участниками': messengers/telegram/tnikonova31-instruction.md
+          - 'Пересылка сообщений и медиафайлов': messengers/telegram/send-messages.md
+      - MAX:
+          - messengers/max/index.md
+          - 'Настройка внешнего вида': messengers/max/appearance.md
+          - 'Настройка уведомлений': messengers/max/notifications.md
+          - 'Настройка безопасности и конфиденциальности': messengers/max/security.md
+  - Офисные программы:
+      - office/index.md
+      - Microsoft Word: 
+          - office/word/index.md
+          - 'Вставка таблицы': office/word/table-enter.md
+          - 'Форматирование текста': office/word/format-text.md
+      - Нотсапп: 
+          - office/notesapp/index.md
+#  - Графические программы:
+#      - graphics/index.md
 
 # Подключение кастомных CSS
 extra_css:
