@@ -48,7 +48,9 @@ plugins:
       lang: ru
   # - awesome-pages  # автоматически собирает названия статей - не заработало
   #- macros  # автоматически собирает названия статей
-  # - tags # Плагин для тегов (раскомментируйте при необходимости)
+  - tags: # Плагин для тегов (раскомментируйте при необходимости)
+  #- glightbox
+  - swagger-ui-tag
 
 # Расширения Markdown
 markdown_extensions:
@@ -99,6 +101,9 @@ nav:
           - 'Удаление заметки': office/notesapp/delete-note.md               
   - Графические программы:    
       - graphics/index.md
+  - API документация:    
+      - api/index.md
+      - 'Пример API документации': api/api.md
 
 # Подключение кастомных CSS
 extra_css:
