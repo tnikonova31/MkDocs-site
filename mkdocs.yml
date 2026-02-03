@@ -51,6 +51,8 @@ plugins:
   - tags: # Плагин для тегов (раскомментируйте при необходимости)
   #- glightbox
   - swagger-ui-tag
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
 
 # Расширения Markdown
 markdown_extensions:
