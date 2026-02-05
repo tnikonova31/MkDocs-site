@@ -109,7 +109,7 @@ nav:
 
 # Подключение кастомных CSS
 extra_css:
-  - css/custom.css
+  - stylesheets/extra.css
 
 # Дополнительные настройки
 extra:
