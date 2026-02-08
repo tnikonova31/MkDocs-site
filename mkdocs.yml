@@ -9,12 +9,13 @@ theme:
   logo: images/logo.png
   favicon: favicon.png
   language: ru
+  toc: false  # отключение правой панели
 
   features:
     - navigation.indexes
     - navigation.tabs.sticky
     - navigation.instant
-    - navigation.top
+   # - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -47,6 +48,8 @@ plugins:
   - swagger-ui-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
+      theme:
+        enabled: false
 
 markdown_extensions:
   - admonition
