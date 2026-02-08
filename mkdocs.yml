@@ -43,6 +43,7 @@ plugins:
         - документация
         - заметки
         - текстовый редактор
+        - графика
   - swagger-ui-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
